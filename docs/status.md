@@ -34,6 +34,8 @@ Pages hanya menyajikan panduan statis. Kode, riwayat repository aplikasi, akun, 
 
 Kelulusan CI tetap terpisah dari pengujian transaksi lengkap dan penerimaan cloud di bawah.
 
+Pemindaian image menghasilkan laporan keamanan terpisah. Laporan bersifat advisory; build lulus tidak berarti nol kerentanan. Artifact keamanan tetap privat bersama repository aplikasi. Dashboard Code Scanning memerlukan dukungan fitur dan aktivasi tersendiri.
+
 ## Belum / ditunda
 
 | Pekerjaan | Status |
@@ -43,6 +45,7 @@ Kelulusan CI tetap terpisah dari pengujian transaksi lengkap dan penerimaan clou
 | Tes browser lengkap menggunakan login setiap jabatan pada UI terbaru | Belum; bukti terbaru adalah browser Administrator + enam role server |
 | Kualitas jawaban provider AI berbayar pada skenario portofolio | Belum diuji pada tahap ini |
 | Pembaca layar dan penilaian aksesibilitas menyeluruh | Belum |
+| Triage temuan pemindaian image dan dashboard Code Scanning | Pekerjaan keamanan terpisah; dashboard belum diaktifkan |
 | Seluruh istilah/workflow garment digeneralisasi | Sebagian; nama role lama tetap untuk kompatibilitas |
 | Instalasi situs kosong yang lengkap dan berulang | Belum; rilis saat ini masih memiliki kebutuhan schema/izin situs |
 | Frappe Cloud, domain, HTTPS dan penerimaan di target | Belum |
