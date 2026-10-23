@@ -56,3 +56,5 @@ Pemindaian image menghasilkan laporan keamanan terpisah. Laporan bersifat adviso
 Data lama yang tidak terkonfirmasi tidak diperbaiki dengan tebakan atau dikembalikan otomatis. Payroll dan penerapan produksi merupakan pekerjaan terpisah.
 
 Checkpoint identitas: 22 pemeriksaan browser valid pada tujuh profil, 195 pemeriksaan HTTP dan 42 hash tabel tetap sama. Panduan lama diberi catatan historis; data simulasi baru tetap ditunda. Generalisasi proses produksi dan batas perusahaan belum menjadi bagian dari perapian label ini.
+
+Pemeriksaan terakhir menambahkan dua cek browser untuk label dan tautan **Ringkasan kerja** pada Kotak Tindakan; keduanya lulus. Versi cache diperbarui, 166 tes sintetis dan sintaks diperiksa ulang, serta akun QA kembali dinonaktifkan tanpa perubahan pada 42 hash tabel. Total bukti browser terbaru: 22 pemeriksaan awal ditambah dua pemeriksaan label/navigasi.

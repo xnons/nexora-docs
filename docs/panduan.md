@@ -67,3 +67,5 @@ Layar login kini memakai **Masuk ke Xanly Portfolio**. Menu **Kendali Garmen** m
 Tautan serta ID role lama tetap berlaku untuk kompatibilitas. Nama perusahaan legal dan isi arsip tidak diganti menjadi Xanly. Panduan contoh lama diberi penjelasan bahwa angka/statusnya bukan kondisi data site sekarang. Data dummy portofolio baru tetap ditunda.
 
 Perubahan identitas ini lulus 166 tes sintetis, 195 pemeriksaan HTTP dan 22 pemeriksaan browser valid pada tujuh profil. Sebanyak 42 hash tabel, termasuk izin, autentikasi dan workspace, tetap sama; semua akun QA telah dinonaktifkan kembali. Tidak ada panggilan provider atau transaksi/dummy baru.
+
+Pemeriksaan terakhir menambahkan dua cek browser untuk label dan tautan **Ringkasan kerja** pada Kotak Tindakan; keduanya lulus. Versi cache diperbarui, 166 tes sintetis dan sintaks diperiksa ulang, serta akun QA kembali dinonaktifkan tanpa perubahan pada 42 hash tabel. Total bukti browser terbaru: 22 pemeriksaan awal ditambah dua pemeriksaan label/navigasi.
