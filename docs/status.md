@@ -4,11 +4,12 @@ Checkpoint: 23 Oktober 2026. Bedakan bukti UI lokal, tes otomatis dan kesiapan c
 
 ## Sudah diverifikasi
 
+- Identitas tampilan menjadi **Xanly Portfolio**; judul/menu dan jabatan dirapikan tanpa mengganti ID role, rute, perusahaan atau core.
 - Beranda ERPNext menjadi satu pintu, dengan pilihan pekerjaan sesuai izin.
 - Tampilan dokumen resmi dipisahkan dari arsip impor. Formulir kosong menjelaskan data yang perlu disiapkan.
 - Input pesanan menawarkan manual atau bantuan AI secara jelas; formulir tidak otomatis tersimpan.
 - Kontrol HP, navigasi beranda dan pencarian menu diperbaiki.
-- Regresi terbaru: 162 tes sintetis dan pemeriksaan sintaks lulus.
+- Regresi terbaru: 166 tes sintetis dan pemeriksaan sintaks lulus.
 - Enam login jabatan terpisah lulus 25 pemeriksaan browser terbaru, termasuk logout. HTTP lintas role/Guest lulus 169/169; Frappe rollback 38/38. Inventaris/Operasional tetap ditolak membaca Sales Invoice.
 - Tiga masalah pada aplikasi tambahan Nexora diperbaiki. Core ERPNext/Frappe tetap utuh; 36 hash tabel sama, akun QA dinonaktifkan kembali, tanpa provider AI.
 - Pengujian UI sebelumnya lulus 19 pemeriksaan memakai sesi Administrator pada desktop dan viewport HP. Hash 37 entri data/konfigurasi tetap sama.
@@ -21,7 +22,7 @@ Hasil diperiksa kembali pada 23 Oktober 2026:
 | Pemeriksaan                       | Hasil                                                              |
 | --------------------------------- | ------------------------------------------------------------------ |
 | Lint seluruh repository aplikasi  | Lulus; formatter, ejaan, shell, Dockerfile dan Compose             |
-| Regresi sintetis Nexora           | 162 tes lulus, ditambah sintaks dan schema                         |
+| Regresi sintetis Nexora           | 166 tes lulus, ditambah sintaks dan schema                         |
 | Docker ERPNext v15 — amd64        | 18 tes integrasi lulus                                             |
 | Docker ERPNext v15 — ARM64 native | 18 tes integrasi lulus                                             |
 | Docker ERPNext v16 — amd64        | 18 tes integrasi lulus                                             |
@@ -53,3 +54,5 @@ Pemindaian image menghasilkan laporan keamanan terpisah. Laporan bersifat adviso
 | Backup baru dan uji pemulihan setelah skenario migrasi ditentukan | Diperlukan sebelum migrasi                                                                             |
 
 Data lama yang tidak terkonfirmasi tidak diperbaiki dengan tebakan atau dikembalikan otomatis. Payroll dan penerapan produksi merupakan pekerjaan terpisah.
+
+Checkpoint identitas: 22 pemeriksaan browser valid pada tujuh profil, 195 pemeriksaan HTTP dan 42 hash tabel tetap sama. Panduan lama diberi catatan historis; data simulasi baru tetap ditunda. Generalisasi proses produksi dan batas perusahaan belum menjadi bagian dari perapian label ini.

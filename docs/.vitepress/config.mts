@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Nexora / ERPNext",
+  title: "Xanly Portfolio",
   description: "Panduan portofolio Xanly dan langkah pemakaian per jabatan",
   lang: "id-ID",
   base: "/nexora-docs/",
@@ -18,10 +18,14 @@ export default defineConfig({
       { text: "Izin & keamanan", link: "/keamanan" },
       { text: "Persiapan cloud", link: "/deployment" },
     ],
-    socialLinks: [{ icon: "github", link: "https://github.com/xnons/nexora-docs" }],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/xnons/nexora-docs" },
+    ],
     search: { provider: "local" },
     outline: { label: "Di halaman ini" },
     docFooter: { prev: "Sebelumnya", next: "Berikutnya" },
-    footer: { message: "Panduan publik. Data situs dan kode aplikasi tetap privat." },
+    footer: {
+      message: "Panduan publik. Data situs dan kode aplikasi tetap privat.",
+    },
   },
 });

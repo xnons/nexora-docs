@@ -1,4 +1,4 @@
-# Nexora / ERPNext — dokumentasi publik
+# Xanly Portfolio — dokumentasi publik
 
 Panduan penggunaan untuk portofolio Xanly: https://xnons.github.io/nexora-docs/.
 

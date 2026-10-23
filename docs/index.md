@@ -1,8 +1,8 @@
 ---
 layout: home
 hero:
-  name: Nexora / ERPNext
-  text: Workspace portofolio Xanly
+  name: Xanly Portfolio
+  text: ERPNext dengan asisten Nexora
   tagline: Mulai dari pekerjaan harian. Panduan praktis dengan batas akses dan status pengujian yang jelas.
   actions:
     - theme: brand

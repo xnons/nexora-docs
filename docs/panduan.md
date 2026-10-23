@@ -1,4 +1,4 @@
-# Panduan Nexora / ERPNext untuk portofolio Xanly
+# Panduan Xanly Portfolio · ERPNext dan Nexora
 
 Workspace ini memusatkan pekerjaan di ERPNext memakai akun yang sama. Arah proyek sekarang adalah portofolio dan simulasi Xanly. Data dummy besar belum disiapkan; data perusahaan lama tidak dipulihkan otomatis.
 
@@ -59,3 +59,11 @@ Data master masih kosong. Simulasi transaksi lengkap, data dummy besar, uji prov
 Lihat [status dan pekerjaan tersisa](status.md), [izin dan keamanan](keamanan.md), serta [persiapan cloud](deployment.md).
 
 Pembaruan 23 Oktober: 25 pemeriksaan browser terbaru dengan enam login jabatan berbeda lulus. Pemeriksaan HTTP 169/169 dan Frappe rollback 38/38 juga lulus; regresi sintetis kini 162 tes. Role Inventaris/Operasional tetap tidak memperoleh data keuangan; System Manager teknis tidak otomatis memperoleh hak akuntansi native. Screenshot dan laporan lengkap tetap privat.
+
+## Identitas dan nama menu terbaru
+
+Layar login kini memakai **Masuk ke Xanly Portfolio**. Menu **Kendali Garmen** menjadi **Ringkasan kerja**, **Data Sumber Garmen** menjadi **Arsip sumber**, dan **Nexora Agen** menjadi **Asisten Nexora**. Nama jabatan di beranda ditampilkan sebagai Inventaris, Operasional, Keuangan, Supervisor, Owner dan Pengelola sistem.
+
+Tautan serta ID role lama tetap berlaku untuk kompatibilitas. Nama perusahaan legal dan isi arsip tidak diganti menjadi Xanly. Panduan contoh lama diberi penjelasan bahwa angka/statusnya bukan kondisi data site sekarang. Data dummy portofolio baru tetap ditunda.
+
+Perubahan identitas ini lulus 166 tes sintetis, 195 pemeriksaan HTTP dan 22 pemeriksaan browser valid pada tujuh profil. Sebanyak 42 hash tabel, termasuk izin, autentikasi dan workspace, tetap sama; semua akun QA telah dinonaktifkan kembali. Tidak ada panggilan provider atau transaksi/dummy baru.
