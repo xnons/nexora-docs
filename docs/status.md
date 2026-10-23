@@ -13,9 +13,26 @@ Checkpoint: 23 Oktober 2026. Bedakan bukti UI lokal, tes otomatis dan kesiapan c
 - Pengujian UI sebelumnya lulus 19 pemeriksaan memakai sesi Administrator pada desktop dan viewport HP. Hash 37 entri data/konfigurasi tetap sama.
 - Panduan publik per jabatan tersedia. Kode aplikasi dan data site tidak disertakan di repository dokumentasi ini.
 
-## Pemeriksaan rilis yang sedang diselesaikan
+## CI dan publikasi sudah lulus
 
-Perbaikan lint, pemisahan tes integrasi Docker dari tes sintetis Nexora, dan publikasi Pages sedang diverifikasi kembali di GitHub. Status akhir akan dicatat setelah workflow selesai; jangan menganggap deployment sukses hanya karena commit sudah terkirim.
+Hasil diperiksa kembali pada 23 Oktober 2026:
+
+| Pemeriksaan | Hasil |
+|---|---|
+| Lint seluruh repository aplikasi | Lulus; formatter, ejaan, shell, Dockerfile dan Compose |
+| Regresi sintetis Nexora | 149 tes lulus, ditambah sintaks dan schema |
+| Docker ERPNext v15 — amd64 | 18 tes integrasi lulus |
+| Docker ERPNext v15 — ARM64 native | 18 tes integrasi lulus |
+| Docker ERPNext v16 — amd64 | 18 tes integrasi lulus |
+| Docker ERPNext v16 — ARM64 native | 18 tes integrasi lulus |
+| Referensi teknis privat | Build dan artifact lulus; tetap terbatas di repo privat |
+| Panduan publik ini | Build dan deploy Pages lulus; lima halaman dan aset utama HTTP 200 |
+
+Integrasi Docker memeriksa koneksi database/cache/worker, endpoint/aset/berkas, header keamanan HTML, backup ke S3 terisolasi, HTTPS, pemasangan ERPNext dan pembuatan situs PostgreSQL. Arsitektur image diperiksa sebelum tes. Ini adalah pengujian scaffold Docker; hasil v15 bukan pernyataan bahwa custom app Nexora mendukung v15. Target app yang digunakan adalah ERPNext v16.
+
+Pages hanya menyajikan panduan statis. Kode, riwayat repository aplikasi, akun, screenshot ERP, backup, kredensial dan dokumen perusahaan tidak dipublikasikan di repository ini. Pencarian panduan sudah dicoba dari browser. Lihat [workflow situs publik](https://github.com/xnons/nexora-docs/actions/workflows/pages.yml).
+
+Kelulusan CI tetap terpisah dari pengujian transaksi lengkap dan penerimaan cloud di bawah.
 
 ## Belum / ditunda
 
