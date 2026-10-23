@@ -8,8 +8,9 @@ Checkpoint: 23 Oktober 2026. Bedakan bukti UI lokal, tes otomatis dan kesiapan c
 - Tampilan dokumen resmi dipisahkan dari arsip impor. Formulir kosong menjelaskan data yang perlu disiapkan.
 - Input pesanan menawarkan manual atau bantuan AI secara jelas; formulir tidak otomatis tersimpan.
 - Kontrol HP, navigasi beranda dan pencarian menu diperbaiki.
-- 149 tes sintetis dan pemeriksaan sintaks lulus kembali setelah perbaikan format.
-- Enam peran diperiksa baca-saja di server. Inventaris/Operasional tetap ditolak membaca Sales Invoice.
+- Regresi terbaru: 162 tes sintetis dan pemeriksaan sintaks lulus.
+- Enam login jabatan terpisah lulus 25 pemeriksaan browser terbaru, termasuk logout. HTTP lintas role/Guest lulus 169/169; Frappe rollback 38/38. Inventaris/Operasional tetap ditolak membaca Sales Invoice.
+- Tiga masalah pada aplikasi tambahan Nexora diperbaiki. Core ERPNext/Frappe tetap utuh; 36 hash tabel sama, akun QA dinonaktifkan kembali, tanpa provider AI.
 - Pengujian UI sebelumnya lulus 19 pemeriksaan memakai sesi Administrator pada desktop dan viewport HP. Hash 37 entri data/konfigurasi tetap sama.
 - Panduan publik per jabatan tersedia. Kode aplikasi dan data site tidak disertakan di repository dokumentasi ini.
 
@@ -17,16 +18,16 @@ Checkpoint: 23 Oktober 2026. Bedakan bukti UI lokal, tes otomatis dan kesiapan c
 
 Hasil diperiksa kembali pada 23 Oktober 2026:
 
-| Pemeriksaan | Hasil |
-|---|---|
-| Lint seluruh repository aplikasi | Lulus; formatter, ejaan, shell, Dockerfile dan Compose |
-| Regresi sintetis Nexora | 149 tes lulus, ditambah sintaks dan schema |
-| Docker ERPNext v15 — amd64 | 18 tes integrasi lulus |
-| Docker ERPNext v15 — ARM64 native | 18 tes integrasi lulus |
-| Docker ERPNext v16 — amd64 | 18 tes integrasi lulus |
-| Docker ERPNext v16 — ARM64 native | 18 tes integrasi lulus |
-| Referensi teknis privat | Build dan artifact lulus; tetap terbatas di repo privat |
-| Panduan publik ini | Build dan deploy Pages lulus; lima halaman dan aset utama HTTP 200 |
+| Pemeriksaan                       | Hasil                                                              |
+| --------------------------------- | ------------------------------------------------------------------ |
+| Lint seluruh repository aplikasi  | Lulus; formatter, ejaan, shell, Dockerfile dan Compose             |
+| Regresi sintetis Nexora           | 162 tes lulus, ditambah sintaks dan schema                         |
+| Docker ERPNext v15 — amd64        | 18 tes integrasi lulus                                             |
+| Docker ERPNext v15 — ARM64 native | 18 tes integrasi lulus                                             |
+| Docker ERPNext v16 — amd64        | 18 tes integrasi lulus                                             |
+| Docker ERPNext v16 — ARM64 native | 18 tes integrasi lulus                                             |
+| Referensi teknis privat           | Build dan artifact lulus; tetap terbatas di repo privat            |
+| Panduan publik ini                | Build dan deploy Pages lulus; lima halaman dan aset utama HTTP 200 |
 
 Integrasi Docker memeriksa koneksi database/cache/worker, endpoint/aset/berkas, header keamanan HTML, backup ke S3 terisolasi, HTTPS, pemasangan ERPNext dan pembuatan situs PostgreSQL. Arsitektur image diperiksa sebelum tes. Ini adalah pengujian scaffold Docker; hasil v15 bukan pernyataan bahwa custom app Nexora mendukung v15. Target app yang digunakan adalah ERPNext v16.
 
@@ -38,17 +39,17 @@ Pemindaian image menghasilkan laporan keamanan terpisah. Laporan bersifat adviso
 
 ## Belum / ditunda
 
-| Pekerjaan | Status |
-|---|---|
-| Skenario bisnis dan dataset sintetis besar untuk portofolio | Ditunda sesuai arahan pemilik |
-| Transaksi lengkap lintas jabatan menggunakan data simulasi | Belum, menunggu master dan skenario |
-| Tes browser lengkap menggunakan login setiap jabatan pada UI terbaru | Belum; bukti terbaru adalah browser Administrator + enam role server |
-| Kualitas jawaban provider AI berbayar pada skenario portofolio | Belum diuji pada tahap ini |
-| Pembaca layar dan penilaian aksesibilitas menyeluruh | Belum |
-| Triage temuan pemindaian image dan dashboard Code Scanning | Pekerjaan keamanan terpisah; dashboard belum diaktifkan |
-| Seluruh istilah/workflow garment digeneralisasi | Sebagian; nama role lama tetap untuk kompatibilitas |
-| Instalasi situs kosong yang lengkap dan berulang | Belum; rilis saat ini masih memiliki kebutuhan schema/izin situs |
-| Frappe Cloud, domain, HTTPS dan penerimaan di target | Belum |
-| Backup baru dan uji pemulihan setelah skenario migrasi ditentukan | Diperlukan sebelum migrasi |
+| Pekerjaan                                                         | Status                                                                                                 |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Skenario bisnis dan dataset sintetis besar untuk portofolio       | Ditunda sesuai arahan pemilik                                                                          |
+| Transaksi lengkap lintas jabatan menggunakan data simulasi        | Belum, menunggu master dan skenario                                                                    |
+| Perluasan browser ke transaksi lengkap dan kombinasi role lain    | Pemeriksaan akses/baca/logout enam jabatan sudah lulus; transaksi lengkap masih menunggu data simulasi |
+| Kualitas jawaban provider AI berbayar pada skenario portofolio    | Belum diuji pada tahap ini                                                                             |
+| Pembaca layar dan penilaian aksesibilitas menyeluruh              | Belum                                                                                                  |
+| Triage temuan pemindaian image dan dashboard Code Scanning        | Pekerjaan keamanan terpisah; dashboard belum diaktifkan                                                |
+| Seluruh istilah/workflow garment digeneralisasi                   | Sebagian; nama role lama tetap untuk kompatibilitas                                                    |
+| Instalasi situs kosong yang lengkap dan berulang                  | Belum; rilis saat ini masih memiliki kebutuhan schema/izin situs                                       |
+| Frappe Cloud, domain, HTTPS dan penerimaan di target              | Belum                                                                                                  |
+| Backup baru dan uji pemulihan setelah skenario migrasi ditentukan | Diperlukan sebelum migrasi                                                                             |
 
 Data lama yang tidak terkonfirmasi tidak diperbaiki dengan tebakan atau dikembalikan otomatis. Payroll dan penerapan produksi merupakan pekerjaan terpisah.

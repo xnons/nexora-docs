@@ -8,6 +8,7 @@ Workspace ini memusatkan pekerjaan di ERPNext memakai akun yang sama. Arah proye
 2. Pilih kartu pekerjaan yang tersedia untuk akun Anda. Menu mengikuti izin, sehingga setiap jabatan dapat melihat pilihan berbeda.
 3. Untuk mencari menu lain, buka **Semua menu & bantuan**, lalu ketik istilah seperti **pesanan**, **tagihan pelanggan**, **stok**, atau **AI**.
 4. Gunakan **Beranda kerja** di header untuk kembali.
+5. Sebelum berganti pengguna, tekan **Keluar akun**, konfirmasikan **Ya**, dan pastikan halaman login muncul. Jika koneksi gagal, draf belum dikosongkan.
 
 **Latihan** dipakai untuk belajar. **Data asli** dipakai hanya untuk pencatatan pekerjaan sungguhan. Memilih Latihan tidak otomatis membuat master atau transaksi contoh. Jika pilihan barang, gudang atau pesanan kosong, minta pengelola menyiapkan data latihan, kemudian tekan **Periksa lagi**.
 
@@ -56,3 +57,5 @@ Perubahan UI telah diuji dengan 149 tes sintetis, pemeriksaan server baca-saja u
 Data master masih kosong. Simulasi transaksi lengkap, data dummy besar, uji provider berbayar, pembaca layar dan kesiapan cloud memerlukan pekerjaan terpisah. Panduan ini tidak berisi screenshot site, akun, backup atau data perusahaan.
 
 Lihat [status dan pekerjaan tersisa](status.md), [izin dan keamanan](keamanan.md), serta [persiapan cloud](deployment.md).
+
+Pembaruan 23 Oktober: 25 pemeriksaan browser terbaru dengan enam login jabatan berbeda lulus. Pemeriksaan HTTP 169/169 dan Frappe rollback 38/38 juga lulus; regresi sintetis kini 162 tes. Role Inventaris/Operasional tetap tidak memperoleh data keuangan; System Manager teknis tidak otomatis memperoleh hak akuntansi native. Screenshot dan laporan lengkap tetap privat.

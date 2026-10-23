@@ -15,3 +15,7 @@ Pengiriman ke provider AI dilakukan hanya lewat tindakan analisis yang jelas dan
 Hasil di atas bukan audit seluruh endpoint. Pengujian browser terbaru memakai sesi Administrator; itu tidak membuktikan semua jabatan telah melalui transaksi lengkap. Perubahan peran dan konteks AI harus diuji ulang dengan akun dan data sintetis yang sesuai.
 
 Lihat [status pengujian dan pekerjaan tersisa](status.md).
+
+## Pemeriksaan akses terbaru
+
+Pada 23 Oktober 2026, enam akun jabatan terpisah lulus 25 pemeriksaan browser baca/akses/logout, 169 pemeriksaan HTTP lintas role/Guest, serta 38 pemeriksaan Frappe dengan rollback. Pembacaan Job melalui API umum ditutup; gunakan Inbox Nexora yang menyaring sesuai izin. Revisi laporan tidak dapat membawa metadata analisis internal. Core dan role ERPNext tidak diubah. Akun QA dikembalikan nonaktif; 36 hash tabel tetap sama. Ini bukan jaminan semua kombinasi role atau deployment cloud sudah diuji.
