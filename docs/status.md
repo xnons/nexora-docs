@@ -45,22 +45,22 @@ Pemindaian image menghasilkan laporan keamanan terpisah. Laporan bersifat adviso
 
 ## Belum / ditunda
 
-| Pekerjaan                                                         | Status                                                                                                 |
-| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Skenario bisnis dan dataset sintetis besar untuk portofolio       | Ditunda sesuai arahan pemilik                                                                          |
-| Transaksi lengkap lintas jabatan menggunakan data simulasi        | Belum, menunggu master dan skenario                                                                    |
-| Perluasan browser ke transaksi lengkap dan kombinasi role lain    | Pemeriksaan akses/baca/logout enam jabatan sudah lulus; transaksi lengkap masih menunggu data simulasi |
-| Kualitas jawaban provider AI berbayar pada skenario portofolio    | Belum diuji pada tahap ini                                                                             |
-| Pembaca layar dan penilaian aksesibilitas menyeluruh              | Belum                                                                                                  |
-| Triage temuan pemindaian image dan dashboard Code Scanning        | Pekerjaan keamanan terpisah; dashboard belum diaktifkan                                                |
-| Seluruh istilah/workflow garment digeneralisasi                   | Sebagian; nama role lama tetap untuk kompatibilitas                                                    |
-| Instalasi situs kosong yang lengkap dan berulang                  | Belum; rilis saat ini masih memiliki kebutuhan schema/izin situs                                       |
-| Frappe Cloud, domain, HTTPS dan penerimaan di target              | Belum                                                                                                  |
-| Backup baru dan uji pemulihan setelah skenario migrasi ditentukan | Diperlukan sebelum migrasi                                                                             |
+| Pekerjaan                                                      | Status                                                                                                      |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Skenario bisnis dan dataset sintetis besar untuk portofolio    | Ditunda sesuai arahan pemilik                                                                               |
+| Variasi transaksi di luar siklus kecil lintas jabatan          | Siklus kecil sudah lulus; variasi pajak, retur dan payroll belum                                            |
+| Perluasan browser ke transaksi lengkap dan kombinasi role lain | 29 cek browser tujuh profil lulus pada data kecil; variasi transaksi dan kombinasi role lain masih terpisah |
+| Kualitas jawaban provider AI berbayar pada skenario portofolio | Belum diuji pada tahap ini                                                                                  |
+| Pembaca layar dan penilaian aksesibilitas menyeluruh           | Belum                                                                                                       |
+| Triage temuan pemindaian image dan dashboard Code Scanning     | Pekerjaan keamanan terpisah; dashboard belum diaktifkan                                                     |
+| Seluruh istilah/workflow garment digeneralisasi                | Sebagian; nama role lama tetap untuk kompatibilitas                                                         |
+| Instalasi situs kosong yang lengkap dan berulang               | Belum; rilis saat ini masih memiliki kebutuhan schema/izin situs                                            |
+| Frappe Cloud, domain, HTTPS dan penerimaan di target           | Belum                                                                                                       |
+| Uji pemulihan terbaru setelah skenario migrasi ditentukan      | Backup sebelum/sesudah simulasi sudah ada; restore target tetap diperlukan sebelum migrasi                  |
 
 Data lama yang tidak terkonfirmasi tidak diperbaiki dengan tebakan atau dikembalikan otomatis. Payroll dan penerapan produksi merupakan pekerjaan terpisah.
 
-Checkpoint identitas: 22 pemeriksaan browser valid pada tujuh profil, 195 pemeriksaan HTTP dan 42 hash tabel tetap sama. Panduan lama diberi catatan historis; data simulasi baru tetap ditunda. Generalisasi proses produksi dan batas perusahaan belum menjadi bagian dari perapian label ini.
+Checkpoint identitas 23 Oktober (sebelum data kecil): 22 pemeriksaan browser valid pada tujuh profil, 195 pemeriksaan HTTP dan 42 hash tabel tetap sama. Panduan lama diberi catatan historis; saat itu data simulasi belum dibuat. Profil perusahaan dan alur jasa ditambahkan pada 24 Oktober; data besar tetap ditunda.
 
 Pemeriksaan terakhir menambahkan dua cek browser untuk label dan tautan **Ringkasan kerja** pada Kotak Tindakan; keduanya lulus. Versi cache diperbarui, 166 tes sintetis dan sintaks diperiksa ulang, serta akun QA kembali dinonaktifkan tanpa perubahan pada 42 hash tabel. Total bukti browser terbaru: 22 pemeriksaan awal ditambah dua pemeriksaan label/navigasi.
 
