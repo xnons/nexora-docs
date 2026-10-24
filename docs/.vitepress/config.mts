@@ -14,6 +14,7 @@ export default defineConfig({
     sidebar: [
       { text: "Mulai di sini", link: "/" },
       { text: "Pemakaian per jabatan", link: "/panduan" },
+      { text: "Simulasi kecil Xanly", link: "/simulasi" },
       { text: "Sudah & belum", link: "/status" },
       { text: "Izin & keamanan", link: "/keamanan" },
       { text: "Persiapan cloud", link: "/deployment" },

@@ -1,6 +1,6 @@
 # Panduan Xanly Portfolio · ERPNext dan Nexora
 
-Workspace ini memusatkan pekerjaan di ERPNext memakai akun yang sama. Arah proyek sekarang adalah portofolio dan simulasi Xanly. Data dummy besar belum disiapkan; data perusahaan lama tidak dipulihkan otomatis.
+Workspace ini memusatkan pekerjaan di ERPNext memakai akun yang sama. Arah proyek sekarang adalah portofolio dan simulasi Xanly. Data dummy kecil **Xanly Portfolio Demo** tersedia sejak 24 Oktober 2026; [cara mencoba per jabatan](simulasi.md). Data dummy besar tetap ditunda dan data lama tidak dipulihkan otomatis.
 
 ## Mulai dalam beberapa langkah
 
@@ -54,7 +54,7 @@ Nama role berawalan Garmen masih dipertahankan sebagai pengenal kompatibilitas. 
 
 Perubahan UI telah diuji dengan 149 tes sintetis, pemeriksaan server baca-saja untuk enam role, dan 19 pemeriksaan browser memakai sesi Administrator. Cakupan browser meliputi desktop serta viewport HP efektif 390 x 844 CSS px. Hash 37 entri data bisnis/konfigurasi tetap sama. Guest ditolak pada RPC pilihan input baru. Itu bukan audit lengkap semua endpoint.
 
-Data master masih kosong. Simulasi transaksi lengkap, data dummy besar, uji provider berbayar, pembaca layar dan kesiapan cloud memerlukan pekerjaan terpisah. Panduan ini tidak berisi screenshot site, akun, backup atau data perusahaan.
+Checkpoint UI 23 Oktober masih memakai master kosong. Simulasi kecil berisi master dan transaksi kini tersedia; [panduan simulasi](simulasi.md). Data besar, variasi transaksi lengkap, uji provider berbayar, pembaca layar dan kesiapan cloud masih terpisah. Panduan ini tidak berisi screenshot site, akun, backup atau data perusahaan.
 
 Lihat [status dan pekerjaan tersisa](status.md), [izin dan keamanan](keamanan.md), serta [persiapan cloud](deployment.md).
 

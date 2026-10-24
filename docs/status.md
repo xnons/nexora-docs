@@ -1,8 +1,13 @@
 # Sudah dan belum
 
-Checkpoint: 23 Oktober 2026. Bedakan bukti UI lokal, tes otomatis dan kesiapan cloud.
+Checkpoint: 24 Oktober 2026. Bedakan bukti UI lokal, tes otomatis dan kesiapan cloud.
 
 ## Sudah diverifikasi
+
+- Profil perusahaan **Xanly Portfolio Demo**, alur jasa/proyek, empat barang/jasa dan siklus transaksi kecil sudah aktif lokal. [Isi data dan pemakaian per jabatan](simulasi.md).
+- Verifikasi 24 Oktober: 177 tes sintetis, 175 kontrol HTTP, 88 replay alur, lima cek jejak, 25 cek tambahan dan 29 cek browser valid lulus. GL, stok dan saldo faktur telah dicocokkan; core/role/izin tetap utuh, akun QA nonaktif kembali.
+
+Checkpoint 23 Oktober berikut adalah bukti sebelum simulasi kecil:
 
 - Identitas tampilan menjadi **Xanly Portfolio**; judul/menu dan jabatan dirapikan tanpa mengganti ID role, rute, perusahaan atau core.
 - Beranda ERPNext menjadi satu pintu, dengan pilihan pekerjaan sesuai izin.
@@ -58,3 +63,5 @@ Data lama yang tidak terkonfirmasi tidak diperbaiki dengan tebakan atau dikembal
 Checkpoint identitas: 22 pemeriksaan browser valid pada tujuh profil, 195 pemeriksaan HTTP dan 42 hash tabel tetap sama. Panduan lama diberi catatan historis; data simulasi baru tetap ditunda. Generalisasi proses produksi dan batas perusahaan belum menjadi bagian dari perapian label ini.
 
 Pemeriksaan terakhir menambahkan dua cek browser untuk label dan tautan **Ringkasan kerja** pada Kotak Tindakan; keduanya lulus. Versi cache diperbarui, 166 tes sintetis dan sintaks diperiksa ulang, serta akun QA kembali dinonaktifkan tanpa perubahan pada 42 hash tabel. Total bukti browser terbaru: 22 pemeriksaan awal ditambah dua pemeriksaan label/navigasi.
+
+Simulasi kecil sudah tersedia; data dummy besar dan variasi pajak/retur/payroll tetap ditunda. GitHub tidak menyimpan database atau setting perusahaan site.
