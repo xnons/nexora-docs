@@ -1,5 +1,7 @@
 # Mencoba data kecil Xanly
 
+Dataset lebih besar juga sudah diuji lokal. [Lihat tambahan data dan pencarian pesanan lama](skala.md). Bagian berikut menjelaskan siklus kecil yang tetap dipertahankan.
+
 Sejak 24 Oktober 2026, site lokal memiliki perusahaan **Xanly Portfolio Demo** pada cakupan **Latihan (Demo)**. Semua pelanggan, pemasok, nilai dan dokumennya fiktif. Ini contoh portofolio, bukan laporan bisnis Xanly atau transaksi bank sungguhan.
 
 ## Data yang sudah tersedia
@@ -59,4 +61,4 @@ Gunakan **Keluar akun** sebelum berganti pengguna. Akun QA sudah dinonaktifkan k
 
 177 tes sintetis; 175 kontrol HTTP, 88 pemeriksaan replay alur, lima cek semantik jejak dan 25 cek tambahan; serta 29 cek browser valid pada tujuh profil lulus. Rekonsiliasi GL seimbang Rp3.750.000 pada kedua sisi, dan stok/faktur cocok dengan dokumen native. Core, role, izin dan payload record lama yang diperiksa dipertahankan. Tidak ada panggilan provider AI.
 
-GitHub memuat panduan/kode/seed sintetis, bukan database atau konfigurasi site. Menyalin kode saja tidak memindahkan data contoh. Data besar, skenario pajak/retur/payroll, pengujian aksesibilitas menyeluruh, AI berbayar dan penerimaan cloud masih terpisah.
+GitHub memuat panduan/kode/seed sintetis, bukan database atau konfigurasi site. Menyalin kode tidak memindahkan data contoh. Dataset lebih besar sudah diuji lokal; posting massal, pajak/retur/payroll, aksesibilitas menyeluruh, AI berbayar dan penerimaan cloud masih terpisah.

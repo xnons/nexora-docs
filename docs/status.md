@@ -4,6 +4,8 @@ Checkpoint: 24 Oktober 2026. Bedakan bukti UI lokal, tes otomatis dan kesiapan c
 
 ## Sudah diverifikasi
 
+- Dataset lebih besar: 1.810 record utama tambahan dan 2.170 baris rincian; semua 970 transaksi native tambahan masih draf. Pencarian Input Mudah kini menjangkau pesanan di luar 200 pilihan awal. [Data, cara pakai dan batas ukur](skala.md).
+- Uji skala 24 Oktober: 183 tes sintetis, 314 kontrol HTTP, 536 sampel performa dan 18 cek browser tujuh profil lulus. P95 tertinggi sesudah sekitar 102 ms pada PC lokal; core/izin/record pembanding tetap sama dan QA kembali nonaktif. Tanpa posting massal atau provider AI.
 - Profil perusahaan **Xanly Portfolio Demo**, alur jasa/proyek, empat barang/jasa dan siklus transaksi kecil sudah aktif lokal. [Isi data dan pemakaian per jabatan](simulasi.md).
 - Verifikasi 24 Oktober: 177 tes sintetis, 175 kontrol HTTP, 88 replay alur, lima cek jejak, 25 cek tambahan dan 29 cek browser valid lulus. GL, stok dan saldo faktur telah dicocokkan; core/role/izin tetap utuh, akun QA nonaktif kembali.
 
@@ -47,7 +49,7 @@ Pemindaian image menghasilkan laporan keamanan terpisah. Laporan bersifat adviso
 
 | Pekerjaan                                                      | Status                                                                                                      |
 | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Skenario bisnis dan dataset sintetis besar untuk portofolio    | Ditunda sesuai arahan pemilik                                                                               |
+| Skala produksi: jutaan baris, banyak pengguna, posting massal  | Dataset lokal 1.810 record utama sudah diuji; kapasitas produksi belum diuji                                |
 | Variasi transaksi di luar siklus kecil lintas jabatan          | Siklus kecil sudah lulus; variasi pajak, retur dan payroll belum                                            |
 | Perluasan browser ke transaksi lengkap dan kombinasi role lain | 29 cek browser tujuh profil lulus pada data kecil; variasi transaksi dan kombinasi role lain masih terpisah |
 | Kualitas jawaban provider AI berbayar pada skenario portofolio | Belum diuji pada tahap ini                                                                                  |
@@ -60,8 +62,8 @@ Pemindaian image menghasilkan laporan keamanan terpisah. Laporan bersifat adviso
 
 Data lama yang tidak terkonfirmasi tidak diperbaiki dengan tebakan atau dikembalikan otomatis. Payroll dan penerapan produksi merupakan pekerjaan terpisah.
 
-Checkpoint identitas 23 Oktober (sebelum data kecil): 22 pemeriksaan browser valid pada tujuh profil, 195 pemeriksaan HTTP dan 42 hash tabel tetap sama. Panduan lama diberi catatan historis; saat itu data simulasi belum dibuat. Profil perusahaan dan alur jasa ditambahkan pada 24 Oktober; data besar tetap ditunda.
+Checkpoint identitas 23 Oktober (sebelum data kecil): 22 pemeriksaan browser valid pada tujuh profil, 195 pemeriksaan HTTP dan 42 hash tabel tetap sama. Panduan lama diberi catatan historis; saat itu data simulasi belum dibuat. Profil perusahaan, alur jasa dan dataset lebih besar ditambahkan pada 24 Oktober; kapasitas produksi belum diuji.
 
 Pemeriksaan terakhir menambahkan dua cek browser untuk label dan tautan **Ringkasan kerja** pada Kotak Tindakan; keduanya lulus. Versi cache diperbarui, 166 tes sintetis dan sintaks diperiksa ulang, serta akun QA kembali dinonaktifkan tanpa perubahan pada 42 hash tabel. Total bukti browser terbaru: 22 pemeriksaan awal ditambah dua pemeriksaan label/navigasi.
 
-Simulasi kecil sudah tersedia; data dummy besar dan variasi pajak/retur/payroll tetap ditunda. GitHub tidak menyimpan database atau setting perusahaan site.
+Simulasi kecil dan dataset lebih besar tersedia lokal. Posting massal dan variasi pajak/retur/payroll belum diuji. GitHub tidak menyimpan database atau setting perusahaan site.

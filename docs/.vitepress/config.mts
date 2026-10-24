@@ -15,6 +15,7 @@ export default defineConfig({
       { text: "Mulai di sini", link: "/" },
       { text: "Pemakaian per jabatan", link: "/panduan" },
       { text: "Simulasi kecil Xanly", link: "/simulasi" },
+      { text: "Data lebih besar & pencarian", link: "/skala" },
       { text: "Sudah & belum", link: "/status" },
       { text: "Izin & keamanan", link: "/keamanan" },
       { text: "Persiapan cloud", link: "/deployment" },
